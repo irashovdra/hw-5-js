@@ -8,7 +8,7 @@ console.log(email.length);
 
 const a = "My";
 const b = "name";
-const c = "is"
+const c = "is";
 const fullName = `${a} ${b} ${c} Viktor`;
 console.log(fullName);
 
@@ -19,6 +19,11 @@ const payment = 300;
 const thanks = `Дякуємо ${userName}! До сплати ${payment} гривень`;
 console.log(thanks);
 
+// exercise 4
+
+const myName = "Iryna";
+console.log(myName.replace("I", "@"));
+
 // exercise 5
 
 const nickName = "Iryna Shovdra";
@@ -26,12 +31,13 @@ console.log(nickName.indexOf(" "));
 
 // exercise 6
 
-const str = "Ваш баланс поповнено на 10000000";
+const str = "Ваш баланс поповнено на 1";
+console.log(str.padEnd(40, "0"));
 console.log(str.length);
 
 // exercise 7
 
-const result = 5+5+"5";
+const result = 5 + 5 + "5";
 console.log(result);
 console.log(typeof result);
 
@@ -59,14 +65,22 @@ const courseTopic = "JavaScript essentials";
 const courseTopicLength = courseTopic.length;
 console.log(courseTopicLength);
 
-const firstElement = courseTopic.startsWith("J");
+const firstElement = courseTopic[0];
 console.log(firstElement);
 
-const lastElement = courseTopic.endsWith("s");
+const lastElement = courseTopic[courseTopic.length - 1];
 console.log(lastElement);
+
+// const firstElement = courseTopic.startsWith("J");
+// console.log(firstElement);
+
+// const lastElement = courseTopic.endsWith("s");
+// console.log(lastElement);
 
 // exercise 11
 
-const stringLength = 5;
-const substring = stringLength.length;
+const string = "I am studying JavaScript";
+console.log(string.length);
+const length = prompt("Введіть число");
+const substring = string.slice(0, length);
 console.log(substring);
